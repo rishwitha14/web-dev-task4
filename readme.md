@@ -3,13 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     background: #000;
     color: #fff;
     font-family: 'Poppins', sans-serif;
 }
-
 .header {
     width: 100%;
     height: 100vh;
@@ -19,19 +17,16 @@ body {
     padding: 10px 8%;
     position: relative;
 }
-
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
 }
-
 .logo {
     width: 150px;
     cursor: pointer;
 }
-
 nav button {
     border: 0;
     outline: 0;
@@ -43,7 +38,6 @@ nav button {
     margin-left: 10px;
     cursor: pointer;
 }
-
 .language-btn {
     display: inline-flex;
     align-items: center;
@@ -51,12 +45,10 @@ nav button {
     border: 1px solid #fff;
     padding: 7px 10px;
 }
-
 .language-btn img {
     width: 10px;
     margin-left: 10px;
 }
-
 .header-content {
     position: absolute;
     top: 50%;
@@ -65,19 +57,16 @@ nav button {
     text-align: center;
     margin-top: 100px;
 }
-
 .header-content h1 {
     font-size: 60px;
     line-height: 70px;
     font-weight: 600;
     max-width: 650px;
 }
-
 .header-content h3 {
     font-weight: 400;
     margin-bottom: 20px;
 }
-
 .email-signup {
     background: #fff;
     border-radius: 4px;
@@ -86,14 +75,12 @@ nav button {
     margin-top: 30px;
     overflow: hidden;
 }
-
 .email-signup input {
     flex: 1;
     border: 0;
     outline: 0;
     margin-left: 20px;
 }
-
 .email-signup button {
     background: #db0001;
     border: 0;
@@ -103,12 +90,10 @@ nav button {
     cursor: pointer;
     padding: 15px 30px;
 }
-
 .features {
     padding: 50px 12%;
     font-size: 22px;
 }
-
 .row {
     display: flex;
     width: 100%;
@@ -116,46 +101,38 @@ nav button {
     flex-wrap: wrap;
     padding: 50px 0px;
 }
-
 .text-col,
 .img-col {
     flex-basis: 50%;
     margin-bottom: 20px;
 }
-
 .img-col img {
     display: block;
     width: 90%;
     margin: auto;
 }
-
 .features h2 {
     font-size: 50px;
     font-weight: 600;
     margin-bottom: 20px;
 }
-
 .reverse {
     flex-direction: row-reverse;
 }
-
 .faq {
     padding: 10px 12%;
     text-align: center;
     font-size: 18px;
 }
-
 .faq h2 {
     font-weight: 500;
     font-size: 40px;
 }
-
 .accordion {
     margin: 60px auto;
     width: 100%;
     max-width: 750px;
 }
-
 .accordion li {
     list-style: none;
     width: 100%;
@@ -173,7 +150,6 @@ nav button {
     cursor: pointer;
     position: relative;
 }
-
 .accordion li label::after {
     content: '+';
     font-size: 34px;
@@ -181,11 +157,9 @@ nav button {
     right: 20px;
     transition: transform 0.5s;
 }
-
 input[type="radio"] {
     display: none;
 }
-
 .accordion .content {
     background: #303030;
     text-align: left;
@@ -194,12 +168,10 @@ input[type="radio"] {
     overflow: hidden;
     transition: max-height 0.5s, padding 0.5s;
 }
-
 .accordion input[type="radio"]:checked + label + .content {
     max-height: 600px;
     padding: 30px 20px;
 }
-
 .accordion input[type="radio"]:checked + label::after {
     transform: rotate(135deg);
 }
@@ -329,17 +301,14 @@ input[type="radio"] {
 </body>
 </html>
 const accordionItems = document.querySelectorAll('.accordion li');
-
 accordionItems.forEach(item => {
     item.addEventListener('click', () => {
         const content = item.querySelector('.content');
         const isOpen = content.style.maxHeight;
-
         accordionItems.forEach(item => {
             const itemContent = item.querySelector('.content');
             itemContent.style.maxHeight = null;
         });
-
         if (!isOpen) {
             content.style.maxHeight = content.scrollHeight + 'px';
         }
