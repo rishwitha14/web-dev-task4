@@ -8,7 +8,7 @@
 <body>
 <div class="header">
     <nav>
-        <img src="images/logo.png" class="logo">
+        <img src="logo.png" class="logo">
         <div>
             <form action="/action_page.php">
                 <select name="language" id="language">
@@ -39,7 +39,7 @@
             <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple Tv and more.</p>
         </div>
         <div class="img-col">
-            <img src="images/feature-1.png">
+            <img src="feature-1.png">
         </div>
     </div>
     <div class="row reverse">
@@ -48,7 +48,7 @@
             <p>Save your favourites easily and always have something to watch.</p>
         </div>
         <div class="img-col">
-            <img src="images/feature-2.png">
+            <img src="feature-2.png">
         </div>
     </div>
     <div class="row">
@@ -57,7 +57,7 @@
             <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
         </div>
         <div class="img-col">
-            <img src="images/feature-3.png">
+            <img src="feature-3.png">
         </div>
     </div>
     <div class="row reverse">
@@ -66,7 +66,7 @@
             <p>Send children on adventures with their favourites characters in a space made just for them-free with your membership</p>
         </div>
         <div class="img-col">
-            <img src="images/feature-4.png">
+            <img src="feature-4.png">
         </div>
     </div>
 </div>
