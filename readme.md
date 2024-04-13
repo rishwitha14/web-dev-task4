@@ -1,12 +1,3 @@
-
-
-
-.header-content h1 {
-    font-size: 60px;
-    line-height: 70px;
-    font-weight: 600;
-    max-width: 650px;
-}
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -127,7 +118,6 @@
         </li>
     </ul>
 </div>
-<script src="script.js"></script>
 </body>
 </html>
 
